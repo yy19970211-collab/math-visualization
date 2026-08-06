@@ -9,6 +9,11 @@
   #hint { position:fixed; top:14px; left:50%; transform:translateX(-50%); z-index:10;
           background:rgba(10,21,32,.85); color:#b8c9d8; font-size:13px;
           padding:8px 16px; border:1px solid #2a3a4a; border-radius:20px; white-space:nowrap; }
+  #nav { position:fixed; top:14px; left:14px; z-index:20; display:flex; gap:6px;
+         background:rgba(10,21,32,.9); border:1px solid #2a3a4a; border-radius:10px; padding:6px 8px; }
+  #nav a { color:#b8c9d8; text-decoration:none; font-size:12.5px; padding:4px 10px; border-radius:6px; white-space:nowrap; }
+  #nav a:hover { background:#1c2a38; color:#f0c239; }
+  #nav a.on { background:#e03c31; color:#fff; }
   #panel { position:fixed; left:16px; bottom:16px; z-index:10; width:320px;
            background:rgba(10,21,32,.94); border:1px solid #2a3a4a; border-radius:12px; padding:14px 16px;
            color:#e8eef2; box-shadow:0 8px 24px rgba(0,0,0,.35); }
@@ -28,6 +33,11 @@
 </style>
 </head>
 <body>
+  <div id="nav">
+    <a href="index.html">莫比乌斯带</a>
+    <a href="holonomy.html" class="on">和乐性</a>
+    <a href="ggb/index.html">全局高斯博内</a>
+  </div>
   <div id="hint">拖拽旋转 · 滚轮缩放 · 播放/拖滑杆,看切向量绕一圈后留下的和乐角</div>
   <div id="panel">
     <div class="row">
